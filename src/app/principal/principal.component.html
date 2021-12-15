@@ -1,0 +1,16 @@
+<ul id="producto">
+    <div class="row">
+    <li *ngFor="let item of Lista" class="col-md-3">
+        <img  src="/assets/{{item.imagen}}" style="width: 52%; height: auto;" alt="">
+        <p>{{item.marca}}</p>
+        <p>{{item.modelo}}</p>
+        <ngb-rating [(rate)]="item.puntaje"></ngb-rating>
+        <p></p>
+        <a [routerLink]="['/detalle-producto',item.id]" routerLinkActive="active-link">
+            <button>Ver</button>
+        </a>
+        <p></p>
+        <p class="precio" style="float: right;">{{item.precio}}</p>
+    </li>
+    </div>
+</ul>

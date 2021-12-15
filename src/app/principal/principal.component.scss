@@ -1,0 +1,29 @@
+ul#producto{
+    list-style: none;
+    display: flex;
+    padding: 1px;
+
+    li.col-md-3{
+        border-style: solid;
+        border-width: 1px;
+        padding: 1%;
+         
+    }
+
+    button{
+        width: 40%;
+        height: 15%;
+        margin-left: 30%;
+        margin-right: 30%;
+        background-color:white;
+    }
+
+    .precio{
+        color:red;
+        font-weight: bold;
+    }
+
+}
+
+
+
